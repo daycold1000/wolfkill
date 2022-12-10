@@ -227,7 +227,7 @@ async def jieshao(bot,ev):
 #这个玩意放在同目录下了，要是你能看得懂的话...这个是记录数据库中每个个位数uid的真实作用
 #狼人杀现在并没有狼人，只有一个纵火者，所以应该叫火人杀？（狼人和纵火者最大的区别是，狼人杀人后女巫可救，纵火者杀人后女巫不可救（其实省了一大堆代码））
 #其他的角色是齐全的，甚至呢在里面加入了一个自创角色 信仰者
-#
+#就大概那么多了吧，希望有问题可以issus，或者使用邮箱联系我：miao-time@foxmail.com
         
 @sv.on_fullmatch(['退出游戏狼人杀'])
 async def start(bot,ev:CQEvent):
@@ -608,7 +608,8 @@ async def start(session: CommandSession):
             game_round +=1  #+1个回合
             await asyncio.sleep(2)
             break
-
+#卧槽，真不知道这庞大又难懂的代码是怎么写出来的
+#下面的就是私聊指令了，尽可能不修改吧，毕竟私聊过多会封号（也许）
 @on_command('烧')
 async def zaima(session: CommandSession):
     bot = nonebot.get_bot()
